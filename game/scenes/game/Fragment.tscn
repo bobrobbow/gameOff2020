@@ -13,6 +13,8 @@ absorbent = true
 collision_mask = 15
 mass = 0.8
 physics_material_override = SubResource( 1 )
+contacts_reported = 10
+contact_monitor = true
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]

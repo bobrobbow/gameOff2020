@@ -83,7 +83,7 @@ polygon = PoolVector2Array( 20, 20, 99.5332, 128.342, 134.329, 272.017, 153.411,
 
 [node name="DriveSurface" type="Area2D" parent="Impossible_Drive"]
 position = Vector2( -974, -495 )
-collision_layer = 4
+collision_layer = 2
 __meta__ = {
 "_edit_group_": true,
 "_edit_lock_": true
@@ -98,6 +98,7 @@ scale = Vector2( 360, 360 )
 gravity_vec = Vector2( 0, 0 )
 gravity = 0.0
 collision_layer = 4
+collision_mask = 17
 script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true,
@@ -110,7 +111,8 @@ shape = SubResource( 3 )
 [node name="MoonSurfaceBody" type="StaticBody2D" parent="."]
 visible = false
 scale = Vector2( 360, 360 )
-collision_layer = 2
+collision_layer = 4
+collision_mask = 17
 physics_material_override = SubResource( 4 )
 script = ExtResource( 4 )
 
